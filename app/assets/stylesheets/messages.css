@@ -62,15 +62,115 @@ width: calc(100vw - 300px);
 }
 
 
-
 .chat-header {
   height: 100px;
+  display: flex;
+  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
+
 }
+
+.room_main_name{
+  color: white;
+  font-size: 24px;
+}
+
+.end_chat{
+}
+
+.end_chat a{
+  color: red ;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+
+
 .messages {
   background-color: #FAFAFA;
   height: calc(100vh - 100px - 90px);
+  overflow: scroll;
 }
+
+.message{
+  margin-top: 10px;
+}
+
+.upper_message{
+  display: flex;
+}
+
+.message_name{
+  font-size: 16px;
+  color: red;
+}
+
+.sent_time{
+  font-size: 12px;
+  color: red;
+  padding-left: 10px;
+  /* パディングの方が要素右の縦の線が揃えられると思われる */
+}
+
+.lower_message{
+  margin-top: 10px;
+}
+
+.message_content{
+  color: red;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+
 .form {
   background-color: #DDDDDD;
   height: 90px;
+  padding: 20px 40px;
+  display: flex;
+  
+}
+
+.input_form{
+  background-color: saddlebrown;
+  width: 100%;
+  display: flex;
+}
+
+.form_area{
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  height: 100%;
+
+
+}
+
+.form_image{
+  width: 60px;
+  padding:10px;
+  text-align: center;
+  margin: 5px;
+  color: black;
+  font-size: 12px;
+  background-color: yellow;
+
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+.submit_btn{
+  background-color: seagreen;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
 }
