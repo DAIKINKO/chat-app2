@@ -49,9 +49,24 @@
 </div>
 
 
-<div class="form"> 
-<%# ブロック要素にすることによってフレックスボックスを使えるようにしている %>
+
+<%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
   <div class="input_form">
+    <%= f.text_field :content, class: 'form_area', placeholder: 'なにか書きたまえ' %>
+    <label class="form_image">
+      <span class="image_file">がぞ</span>
+      <%= f.file_field :image, class: 'hidden' %>
+    </label>
+  </div>
+  <%= f.submit '送信', class: 'submit_btn' %>
+<% end %>
+
+
+
+
+<%# <div class="form">  %>
+<%# ブロック要素にすることによってフレックスボックスを使えるようにしている %>
+  <%# <div class="input_form">
     <input class="form_area" type="text" placeholder="メッセージを書くのだ">
     <label class="form_image">
       <span class="image_file">がぞ</span>
@@ -60,4 +75,4 @@
   </div>
     <input class="submit_btn" type="submit" value="ごーごー" >
     
-</div>
+</div> %>
