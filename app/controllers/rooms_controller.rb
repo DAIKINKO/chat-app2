@@ -19,4 +19,9 @@ def room_params
 end
 
 
+def index
+end
+
+
+
 end
